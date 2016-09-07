@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+	<!-- Optional theme -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<center><div class="col-xs-offset-2 col-sm-offset-2 col-md-offset-3 col-lg-offset-3 col-xs-8 col-sm-8 col-md-6 col-lg-6">
+		<h1>Wanna Play A Game?</h1>
+		<h4>I choose Mad Lib (sorry, you can pick next time). The idea of the game is, briefly, I have a pre-made story that you don't see until you give me a list of nouns, adjectives, verbs, and adverbs that will be randomly input into my pre-made story. Pretty simple, right?</h4>
+		<h3>Let's do this.</h3>
+	</div></center>
+
+	<div class="col-xs-offset-2 col-sm-offset-2 col-md-offset-3 col-lg-offset-3 col-xs-8 col-sm-8 col-md-6 col-lg-6">
+		<form>
+			<input type="text" placeholder="noun, noun, noun, noun" class="form-control spacing" id="nouns">
+			<input type="text" placeholder="adjective, adjective, adjective, adjective" class="form-control spacing" id="adjs">
+			<input type="text" placeholder="verb, verb, verb, verb" class="form-control spacing" id="verbs">
+			<input type="text" placeholder="adverb, adverb, adverb, adverb" class="form-control spacing" id="adverbs">
+			<center><label><input type="checkbox" value="" class="spacing" id="agent-story"> Secret Agent 00.7</label><br/>
+			<label><input type="checkbox" value="" class="spacing" id="farmer-story"> Farmer Jedediah Josephat</label><br/>
+			<label><input type="checkbox" value="" class="spacing" id="robber-story"> Bank Robbery</label><br/></center>
+			<button type="button" class="btn btn-primary spacing" onclick="app.startLib()">Submit</button>
+		</form>
+	</div>
+
+	<p class="col-xs-12 col-sm-12 col-md-12 col-lg-12" id="the-story"></p>
+
+<!--
+	<div>
+		<p>Secret Agent 00.7 snuck quietly into the room, anticipating a trap. His years of experience informed him that there were enemies of the state lurking in the shadows. He calmly proceeded towards the center of the room, pretending to be completely oblivious to their trap. Suddenly he stopped. The room rang silent, as if the air itself was holding its breath. But then something happened that Secret Agent 00.7 didn't anticipate. The floor beneath him collapsed and he lept to the floor's ledge and grasped to it for dear life. Bullets began whizzing by dangerously close to his body. He knew there was nothing left to do but let go. And so he did. But a fall was something Secret Agent 00.7 was always prepared for....</p> 
+
+		<p>Farm life was always the same for Jeremiah Josephat and his son, Jedediah. And today was no exception. The sun was high in the sky, beating warmly down upon them in the middle of a vast field of corn. In fact, the corn ran for so long that, were it not for the horses they were riding, the wouldn't have been able to see their home in the distance. They were hungry for a perfectly prepared meal by their sister, Judeth. But there was something peaceful about the monotany of it all, however. It slowed things down, made one focus on the birds soaring past them, the breeze gently pressing upon their faces, the crushing of the ground below them by the horses. One could almost hear himself think in a place like this.</p>
+
+		<p>"Everybody keep your hands in the air!" shouted John as he burst into the bank with a shotgun. Panic quickly spread through the crowd as he began walking towards them. "Nobody move or I'll..." John clumsily caught his foot on a mat and tripped forward. Quickly regaining composure, he doubled the severity of his inital threat, "...Make hamburger of your little boy," he said in the manliest voice he could must while staring a woman and her little boy down the barrel of his shotgun. John knew he wasn't a good bank robber. So far, though, he was farther than he'd ever made it. "Give me the cash," he commandingly told the bank teller. The man nervously handed over a bag of paper bills and John began backing towards the door. "Now remember, I hear any cops coming my way and I'll..." Slipping, John fell backwards and landed on his back, firing the shotgun accidently and blowing a hole in the cieling. The cieling then proceeded to fall and land John a blow to the head which knocked him out cold.</p>
+	</div>
+-->
+<script type="text/javascript" src="script.js"></script>
+</body>
+</html>
