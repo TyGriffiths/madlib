@@ -20,19 +20,28 @@ var app = {
 (function() {
 	app.startLib = startLib;
 	function startLib() {
-		var userNounsArr = [];
-		var userAdjsArr = [];
-		var userVerbsArr = [];
-		var userAdverbsArr = [];
-
-		var nounsValue = document.getElementById("nouns").value.split(",");
-		var adjsValue = document.getElementById("adjs").value.split(",");
-		var verbsValue = document.getElementById("verbs").value.split(",");
-		var adverbsValue = document.getElementById("adverbs").value.split(",");
 
 //create function that takes user input, splits it, and loops through to check for any empty strings. 
 //if there is a word, push it to a new array, and return the value. 
 //call function
+
+		var userNounsArr = cleanArray(document.getElementById("nouns").value);
+		var userAdjsArr = cleanArray(document.getElementById("adjs").value);
+		var userVerbsArr = cleanArray(document.getElementById("verbs").value);
+		var userAdverbsArr = cleanArray(document.getElementById("adverbs").value);
+		
+		function cleanArray(input) {
+			var newArray = [];
+			var dirtyArray = input.split(",");
+			for (var i = 0; i < dirtyArray.length; i++) {
+				if (dirtyArray[i].trim() !== "") {
+					newArray.push(dirtyArray[i]);
+				}
+			}
+			return newArray;
+		}
+
+
 
  		console.log(userNounsArr);	
 
